@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url(./PlayfairDisplay-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair", "Roboto", Arial, Helvetica, sans-serif;
+  /*border: 2px solid orange;*/
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.headerContent {
+  margin-top: 40px;
+}
+
+.photo {
+  max-width: 550px;
+  min-height: 550px;
+  /*border: 2px solid blue;*/
+  float: left;
+  background-image: url(./pexels-mohamed-abdelghaffar-771742.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: end;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 15px rgb(66, 66, 66);
+}
+.photo h1 {
+  padding: 20px;
+  color: white;
+  font-size: 3rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-self: center;
+}
+
+.description {
+  max-width: 1700px;
+  min-height: 300px;
+  /*border: 1px solid black;*/
+  box-shadow: 1px 1px 10px rgb(66, 66, 66);
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 40px;
+  background-color: white;
+}
+.description h1 {
+  font-size: 2.3rem;
+}
+.description p {
+  font-family: "Roboto", Arial, Helvetica;
+  font-size: 22px;
+  line-height: 2.5rem;
+  color: rgb(80, 80, 80);
+}
+
+.links {
+  display: flex;
+  justify-content: end;
+}
+.githubLink {
+  color: inherit;
+  border: none;
+  background: url(./github.svg);
+  height: 40px;
+  width: 40px;
+}
+.twitterLink {
+  color: inherit;
+  border: none;
+  background: url(./twitter.svg);
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+}
+
+.backgroundHeader {
+  position: absolute;
+  /*border: 2px solid orange;*/
+  z-index: -1;
+  inset: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+.rectangle {
+  width: 100%;
+  background-color: #0891b2;
+}
+.triangle {
+  background-color: #0891b2;
+  border-top: 40vh solid #0891b2;
+  border-left: 0vw solid #0891b2;
+  border-right: 95vw solid white;
+  border-bottom: 0vw solid white;
+}
+
+@media (max-width: 1125px) {
+  .photo {
+    background-position: top;
+    min-height: 450px;
+  }
+}
+
+main {
+}
+
+.mainContent {
+  margin: 80px;
+}
+
+.works {
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(auto-fill, 380px);
+  justify-content: center;
+}
+
+.works > div {
+  box-shadow: 2px 1px 9px 0px rgb(208 208 208);
+  min-height: 400px;
+  /*padding: 20px;*/
+  display: grid;
+  grid-template-rows: 5fr 3fr;
+  grid-template-columns: 1fr;
+}
+
+.work1 .screen1,
+.work2 .screen2,
+.work3 .screen3,
+.work4 .screen4,
+.work5 .screen5,
+.work6 .screen6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  /**/
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  /**/
+}
+
+.work1 .projectName1,
+.work2 .projectName2,
+.work3 .projectName3,
+.work4 .projectName4,
+.work5 .projectName5,
+.work6 .projectName6 {
+  display: grid;
+  grid-template-rows: 40px 110px;
+  padding: 25px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+}
+.top > h2 {
+  margin-right: auto;
+}
+.githubProject {
+  color: inherit;
+  border: none;
+  background: url(./github.svg);
+  height: 30px;
+  width: 30px;
+}
+.share {
+  color: inherit;
+  border: none;
+  background: url(./share-variant.svg);
+  height: 27px;
+  width: 27px;
+  margin-left: 5px;
+}
+
+.bottom {
+  font-family: "Roboto", Arial, Helvetica;
+  color: rgb(80, 80, 80);
+}
+
+footer {
+  background-color: #0891b2;
+  margin-top: 0px;
+  padding-bottom: 40px;
+
+  inset: 0;
+}
+.footerContent {
+  margin: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 18px;
+}
+.laptop {
+  min-width: 300px;
+  width: 90%;
+  min-height: 400px;
+}
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 340px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-family: "Roboto", Arial, Helvetica;
+  padding: 25px;
+  flex: 1 1 340px;
+}
+.infos > h1 {
+  font-size: 2.5rem;
+  margin-bottom: -10px;
+  font-family: "Playfair";
+}
+.infos > p {
+  font-size: 1.4rem;
+}
+
+address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.telephone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+address > img {
+  height: 40px;
+  width: 40px;
+}
+.telephone > img {
+  height: 40px;
+  width: 40px;
+}
+.email > img {
+  height: 40px;
+  width: 40px;
+}
+
+.githubLink2 {
+  color: inherit;
+  border: none;
+  background: url(./github.svg);
+  height: 40px;
+  width: 40px;
+}
+.twitterLink2 {
+  color: inherit;
+  border: none;
+  background: url(./twitter.svg);
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+}
