@@ -27,7 +27,6 @@ header {
 .photo {
   max-width: 550px;
   min-height: 550px;
-  /*border: 2px solid blue;*/
   float: left;
   background-image: url(./pexels-mohamed-abdelghaffar-771742.jpg);
   background-size: cover;
