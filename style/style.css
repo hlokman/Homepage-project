@@ -216,8 +216,10 @@ footer {
 .laptop {
   /*min-width: 300px;
   max-width: 650px;*/
-  height: 100px;
-  width: 150px;
+  max-height: 400px;
+  max-width: 540px;
+  width: 90%;
+  min-height: 200px;
 }
 .picture {
   display: flex;
@@ -315,6 +317,8 @@ address > img {
     max-width: none;
     height: 70%;
     width: 80%;
+    max-height: 400px;
+    max-width: 540px;
   }
 
   .infos {
