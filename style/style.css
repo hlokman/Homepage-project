@@ -216,10 +216,8 @@ footer {
 .laptop {
   /*min-width: 300px;
   max-width: 650px;*/
-  width: 90%;
-  max-width: 450px;
-  min-height: 200px;
-  max-height: 400px;
+  height: 100px;
+  width: 150px;
 }
 .picture {
   display: flex;
