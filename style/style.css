@@ -202,11 +202,11 @@ footer {
   background-color: #0891b2;
   margin-top: 0px;
   padding-bottom: 40px;
-
-  inset: 0;
+  /*inset: 0;
+  border: 2px solid green;*/
 }
 .footerContent {
-  margin: 80px;
+  /*margin: 80px;*/
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -214,25 +214,28 @@ footer {
   padding-top: 18px;
 }
 .laptop {
-  min-width: 300px;
+  /*min-width: 300px;
+  max-width: 650px;*/
+  max-height: 400px;
   width: 90%;
-  min-height: 400px;
+  min-height: 200px;
 }
 .picture {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1 340px;
+  /*flex: 1 1 340px;*/
 }
 
 .infos {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
   color: white;
   font-family: "Roboto", Arial, Helvetica;
   padding: 25px;
-  flex: 1 1 340px;
+  /*flex: 1 1 340px;*/
 }
 .infos > h1 {
   font-size: 2.5rem;
@@ -285,4 +288,55 @@ address > img {
   height: 40px;
   width: 40px;
   margin-left: 5px;
+}
+
+@media screen and (max-width: 1030px) {
+  .triangle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .photo {
+    float: none;
+  }
+  .backgroundHeader {
+    grid-template-rows: 300px;
+  }
+
+  .triangle {
+    display: none;
+  }
+
+  .works {
+    grid-template-columns: 1fr;
+  }
+
+  .laptop {
+    max-width: none;
+    height: 70%;
+    width: 80%;
+  }
+
+  .infos {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .works {
+    grid-template-columns: repeat(6, 380px);
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerContent {
+    justify-content: center;
+    gap: 200px;
+  }
 }
